@@ -1,0 +1,41 @@
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+ }
+
+.contacts__icon {
+    fill: var(--second-cl);
+    transition: fill var(--time-function);
+}
+
+.contacts__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--second-cl);
+    letter-spacing: 0.02em;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    align-items: center;
+    gap: 10px;
+    
+    transition: color var(--time-function), fill var(--time-function);
+
+    &:hover,
+    &:focus {
+            color: var(--blue-cl);
+            fill: var(--blue-cl);}
+
+    &:hover .contacts__icon,
+    &:focus .contacts__icon {
+            fill: var(--blue-cl);}
+        }
+.contacts__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
