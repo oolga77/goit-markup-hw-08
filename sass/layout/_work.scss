@@ -1,13 +1,29 @@
 
 .work{
-    display: flex;
-    gap: 30px;
+    display: none;
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin: -15px;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    
 }
 
+.work.container{
+        
+           padding-top: 0; 
+        }
 
 .work__item{
     position: relative;
-}
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+    }
+
 
 .work__desc{
     display: flex;

@@ -1,8 +1,15 @@
 
 .modal-form {
-    padding: 40px;
+    padding: 20px;
+    padding-top: 40px;
+   
     margin-left: auto;
     margin-right: auto;
+
+    @include mobile {
+        padding: 40px;
+
+    }
 }
 
 .modal-form__title{
@@ -98,8 +105,10 @@
             color: rgba(117, 117, 117, 0.5);
             font-family: var(--main-font);
             font-weight: 400;
-            font-size: 12px;
-            line-height: calc(14 / 12);
+            // font-size: 12px;
+            // line-height: calc(14 / 12);
+            font-size: 14px;
+            line-height: calc(16 / 14);
             letter-spacing: 0.01em;
 }
  }

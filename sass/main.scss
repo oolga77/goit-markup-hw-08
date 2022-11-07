@@ -1,6 +1,7 @@
 // utils styles
 
 @import './utils/vars';
+@import './utils/mixin';
 @import './utils/visually-hidden';
 @import './utils/backdrop';
 @import './utils/modal';
@@ -28,6 +29,9 @@
 @import './components/modal-form-btn';
 @import './components/portfolio-menu';
 @import './components/portfolio-overlay';
+@import './components/menu';
+
+
 
 
 

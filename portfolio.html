@@ -22,20 +22,24 @@
 
     <header class="header">
       <div class="container header__container">
-        
           <a class="logo link" href="./index.html">Web<span class="logo__dark">Studio</span></a>
-        <nav class="nav">
+                 
+          <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__link  link" href="./index.html">Студія</a>
+              <a class="nav__link  nav__link--active link" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--active link" href="./portfolio.html">Портфоліо</a>
+              <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item">
               <a class="nav__link link" href="">Контакти</a>
             </li>
           </ul>
+          
+          <div class="nav__menu-conteiner">
+            
+          </div>
         </nav>
         
         <ul class="contacts list">
@@ -53,20 +57,35 @@
             </svg>
             +38 096 111 11 11</a></li>
         </ul>
-      </div>
+      
+      <button  class="menu__btn js-open-menu" type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          >
+            <svg 
+            width="40px" 
+            height="40px"
+            aria-label="Перемикач мобільного меню">
+
+
+              <use class="nav__icon-menu " href="./images/icons.svg#menu_mobile"></use>
+              <!-- <use class="nav__icon-close " href="./images/icons.svg#close_mobile"></use> -->
+            </svg>
+          </button>
+        </div>
     </header>
 
     <main>
-      <section class="section">
+      <section class="section portfolio-section">
         <div class="container">
         <h1 class="visually-hidden">Наші роботи</h1>
         
         <ul class="portfolio-menu list">
-          <li><button class="portfolio-menu__btn" type="button">Усі</button></li>
-          <li><button class="portfolio-menu__btn" type="button">Веб-сайти</button></li>
-          <li><button class="portfolio-menu__btn" type="button">Додатки</button></li>
-          <li><button class="portfolio-menu__btn" type="button">Дизайн</button></lis=>
-          <li><button class="portfolio-menu__btn" type="button">Маркетинг</button></li>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__btn" type="button">Усі</button></li>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__btn" type="button">Веб-сайти</button></li>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__btn" type="button">Додатки</button></li>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__btn" type="button">Дизайн</button></lis=>
+          <li class="portfolio-menu__item"><button class="portfolio-menu__btn" type="button">Маркетинг</button></li>
         </ul>
       
       
@@ -266,8 +285,9 @@
 
     <footer class="footer">
       <div class="footer__conteiner container ">
-        <div>
-        <h2 lang="en" class="footer__logo logo"><span class="logo__style">Web</span>Studio</h2>
+      <div class="footer__contacts">
+        <div class="footer__date">
+        <a class="logo__footer logo link" href="./index.html">Web<span class="logo__light">Studio</span></a>
         <address>
           <ul class="footer__list list">
             <li class="footer__adress">
@@ -332,12 +352,13 @@
 
           </ul>
       </div>
+    </div>
 
           <form>
             <div role="group" class="form">
               <div class="form__subscription">
               <b class="form__title">Підпишіться на розсилку</b>
-              <label  for="mail"></label>
+              <label for="mail"></label>
               <input class="form__mail" type="email" name="mail" id="mail" placeholder="E-mail"></div>
               
               <button class="form__btn" type="submit"> Підписатися 
@@ -355,5 +376,56 @@
 
     
     </footer>
+
+
+    <div class="menu-container js-menu-container"  id="mobile-menu">
+      <button class="menu-toggle menu__btn js-close-menu">
+        <svg 
+        width="40px" 
+        height="40px"
+        aria-label="Перемикач мобільного меню">
+
+          <use class="nav__icon-close " href="./images/icons.svg#close_mobile"></use>
+        </svg>
+      </button>
+         
+      <ul class="mobile-menu list">
+          <li class="mobile-menu__item">
+            <a class="link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class=" link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link" href="">Контакти</a>
+          </li>
+      </ul>
+      <ul class="list">
+        <li>
+          <a class="mobile-menu__tel link" href="tel:+380961111111">+38 096 111 11 11 </a>
+        </li>
+        <li>
+          <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">
+            
+          info@devstudio.com</a>
+        </li>
+        
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials__item"><a href="" class="link">Instagram</a></li>
+        <li class="mobile-socials__item"><a href="" class="link">Twitter</a></li>
+        <li class="mobile-socials__item"><a href="" class="link">Facebook</a></li>
+        <li class="mobile-socials__item"><a href="" class="link">LinkedIn</a></li>
+      </ul>
+             
+    </div>
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+      </script>
+      <script defer src="js/mobile-menu.js"></script>
+
   </body>
 </html>

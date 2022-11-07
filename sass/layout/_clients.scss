@@ -1,15 +1,35 @@
 .clients{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-   
+   display: flex;
+   // gap: 30px;
+   // justify-content: center;
+   flex-wrap: wrap;
+   max-width: 480px;
+   margin: -15px;
+
+   @media screen and (min-width:768px) {
+        max-width: 768px;
+   }
+
+   @media screen and (min-width:1200px) {
+    max-width: 1200px;
+}
   }
 
   .clients__item {
-    width: 170px;
+        
     height: 92px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
 
-    
+    @media screen and (min-width:768px) {
+      
+      width: calc((100% - 3 * 30px) / 3);
+     }
+
+     @media screen and (min-width:1200px) {
+      
+      width: calc((100% - 6 * 30px) / 6);
+     }
   }
 
 
@@ -21,7 +41,7 @@
     height: 100%;
     border: 1px solid var(--soc-link-cl);
     border-radius: 4px;
-
+ 
     transition: border-color var(--time-function), fill var(--time-function);
   
       &:hover,

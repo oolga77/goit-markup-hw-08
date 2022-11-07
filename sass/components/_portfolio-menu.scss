@@ -2,8 +2,9 @@
 .portfolio-menu {
     display: flex;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
     justify-content: center;
+    
 }
 
 .portfolio-menu__btn {
@@ -17,6 +18,8 @@
     border-radius: 4px;
     border-color: transparent;
     padding: 6px 22px;
+
+    
 
     transition: background var(--time-function), color var(--time-function), box-shadow var(--time-function);
 

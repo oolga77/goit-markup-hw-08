@@ -1,15 +1,36 @@
 
 .logo {
-    display: block;
+    display: flex;
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center;
     color: #2196F3;
-    margin-right: 93px;
+
+    @include tablet {
+        padding-top: 26px;
+        padding-bottom: 26px;   
+    }
+    
+    
+    @include desktop {
+        padding-top: 24px;
+        padding-bottom: 20px;
+        
+   }
+    
+}
+
+.logo__footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+   
 }
 
 .logo__dark {

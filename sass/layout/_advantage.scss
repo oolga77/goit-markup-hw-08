@@ -1,7 +1,11 @@
-.advantages {
-    display: flex;
-    gap: 30px;
-}
+.advantages{
+
+    @include tablet {
+         display: flex;
+         flex-wrap: wrap;
+         margin: -15px;
+        }
+    }
 
 .advantages__icon-box {
     display: flex;
@@ -10,7 +14,10 @@
     height: 120px;
     background-color: var(--portfolio-btn-cl); 
     border-radius: 4px;
-   margin-bottom: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
    }
 
 .advantages__title{
@@ -28,3 +35,24 @@
     letter-spacing: 0.03em;    
     color: var(--second-cl);
 }
+.advantages__item {
+    
+    
+    @include tablet {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+        }
+
+    @include desktop {
+         width: calc((100% - 4 * 30px) / 4); }
+
+    &:not(:last-child) {
+        @include tablet {
+          margin-bottom: 30px;  
+        }
+    }
+    
+   
+}
+
+ 
