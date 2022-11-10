@@ -49,15 +49,15 @@
         
         <ul class="contacts list">
           <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16px" height="12px">
+            <a class="contacts__link  link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon contacts__icon--mail" width="16px" height="12px">
               <use href="./images/icons.svg#mail"></use>
             </svg>
             info@devstudio.com</a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
-            <svg class="contacts__icon" width="10px" height="16px">
+            <a class="contacts__link  link" href="tel:+380961111111">
+            <svg class="contacts__icon contacts__icon--tel" width="10px" height="16px">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11</a></li>
@@ -145,10 +145,7 @@
           <h2 class="section__title work">Чим ми займаємося</h2>
           <ul class="work list">
             <li class="work__item">
-              <img
-                srcset="./images/images-main/images-work/photo-a.jpg 1x,
-                 ./images/images-main/images-work/photo-a2x.jpg 2x,"
-              
+              <img srcset="./images/images-main/images-work/photo-a.jpg 1x, ./images/images-main/images-work/photo-a2x.jpg 2x,"
                 src="./images/images-main/images-work/photo-a.jpg"
                 alt="Стіл, на якому планшет з мобільною клавіфтурою"
                 width="370"
@@ -158,24 +155,17 @@
                 </div>
             </li>
             <li class="work__item">
-              <img
-                srcset="./images/images-main/images-work/photo-b.jpg 1x, 
-                ./images/images-main/images-work/photo-b2x.jpg 2x"
-
+              <img srcset="./images/images-main/images-work/photo-b.jpg 1x, ./images/images-main/images-work/photo-b2x.jpg 2x"
                 src="./images/images-main/images-work/photo-b.jpg"
                 alt="Відкритий ноутбук, пред яким жіночі руки тримають сматфон"
                 width="370"
-                height="294"
-              />
+                height="294"/>
               <div class="work__desc">
                 <h3 class="work__title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work__item">
-              <img
-                srcset="./images/images-main/images-work/photo-c.jpg 1x, 
-                ./images/images-main/images-work/photo-c2x.jpg 2x"
-
+              <img srcset="./images/images-main/images-work/photo-c.jpg 1x, ./images/images-main/images-work/photo-c2x.jpg 2x"
                 src="./images/images-main/images-work/photo-c.jpg"
                 alt="В жіночих руках планшет зі стілусом над столом з клавіфтурою"
                 width="370"
@@ -588,7 +578,7 @@
               rel="noopener noreferrer"
               aria-label="Twitter">
               <svg class="socials__icon footer__icon" width="20px" height="20px">
-                <use href="./images/icons.svg#twitter"
+                <use href="./images/icons.svg#twitter"></use>
               </svg>
             </a>
             </li>
@@ -610,7 +600,7 @@
               rel="noopener noreferrer"
               aria-label="Linkedin">
               <svg class="socials__icon footer__icon" width="20px" height="20px">
-                <use href="./images/icons.svg#linkedin"
+                <use href="./images/icons.svg#linkedin"></use>
               </svg>
             </a>
             </li>
@@ -692,19 +682,19 @@
       <div class="modal-form__group">
         <label class="modal-form__label" for="coment">
           <span class="modal-form__text">Коментар</span>
-        <textarea class="coment" name="coment" id="coment" cols="" rows="" placeholder="Введіть текст"></textarea>
+        <textarea class="coment" name="coment" id="coment"  placeholder="Введіть текст"></textarea>
         </label>
       </div>
         
       <div class="checkbox">
         <label  class="checkbox__label">
-          <input class="checkbox__input visually-hidden"type="checkbox" name="" id=""/>
+          <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox" id="checkbox"/>
           <svg class="checkbox__icon" width="18px" height="18px">
             <use class="checkbox__icon-checked" href="./images/icons.svg#icon-check"></use>
             <use class="checkbox__icon-unchecked" href="./images/icons.svg#icon-uncheck"></use>
           </svg>
           <span class="checkbox__selected">Погоджуюся з розсилкою та приймаю 
-            <a class="checkbox__link" href="" target="">Умови договору</a>
+            <a class="checkbox__link" href="" target=" ">Умови договору</a>
           </span>
          </label>
        </div> 
@@ -732,7 +722,7 @@
              
           <ul class="mobile-menu list">
               <li class="mobile-menu__item">
-                <a class="link" href="./index.html">Студія</a>
+                <a class="link mobile-menu__link--active" href="./index.html">Студія</a>
               </li>
               <li class="mobile-menu__item">
                 <a class=" link" href="./portfolio.html">Портфоліо</a>

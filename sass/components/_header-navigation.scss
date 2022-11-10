@@ -5,11 +5,11 @@
     @include tablet {
         display: flex;
         align-items: center;
-        padding-left: 87px;
+        margin-left: 87px;
     }
 
     @include desktop {
-        padding-left: 92px;
+        margin-left: 92px;
     }
     
  }
@@ -60,10 +60,10 @@
     transition: color var(--time-function);
  
     @include tablet {
-   bottom: -4px;
+   bottom: -2px;
 }
     @include desktop {
-    bottom: -2px;
+    bottom: -1px;
  }
  
 

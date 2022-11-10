@@ -27,6 +27,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+
+    @include tablet {
+        text-align: left;
+    }
+
 }
 
 .advantages__text {
@@ -36,7 +42,6 @@
     color: var(--second-cl);
 }
 .advantages__item {
-    
     
     @include tablet {
         width: calc((100% - 2 * 30px) / 2);
@@ -51,8 +56,14 @@
           margin-bottom: 30px;  
         }
     }
-    
-   
 }
+
+@media screen and (max-width: 767px) {
+    .advantages__item:not(:last-child) {
+        padding-bottom: 30px;
+
+    }
+}
+
 
  

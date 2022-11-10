@@ -1,7 +1,6 @@
 .section {
 
-    //padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
 
 .section__title{
     text-align: center;
@@ -12,8 +11,7 @@
     line-height: calc(33 / 28);
     letter-spacing: 0.03em;
     margin-top: 0%;
-    padding-top: 60px;
-    
+        
 
     @include desktop {
         font-size: 36px;
@@ -26,7 +24,6 @@
 @include desktop {
      padding: 94px 0;
 }
-   
 }
 
 
@@ -36,15 +33,18 @@
     @include desktop {
         display: block;
    }
-   
-}
-
-
+ }
 
 .section__ohter-background{
     background-color: var(--portfolio-btn-cl);
 }
 
 .portfolio-section {
-    padding: 60px;
-}
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+   }

@@ -3,17 +3,18 @@
     display: none;
         
     @include tablet {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
-    align-items: center;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    align-items: flex-start;
+    
     justify-content: center;
     }
 
     @include desktop {
-        display: flex;
+        flex-direction: row;
         margin-left: auto;
+        padding: 0;
         
     }
    
@@ -25,7 +26,22 @@
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 8px;
+        
  } }
+
+ .contacts__icon--mail{
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+    
+}}
+
+.contacts__icon--tel{
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+       width: 10px;
+       height: 14px;
+       
+   }}
 
 .contacts__link {
     display: block;
@@ -36,13 +52,21 @@
     letter-spacing: 0.02em;
     justify-content: center;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
     
+    &:not(:last-child){
+    padding-top: 21px;
+    padding-bottom: 5px;
+ }      
     
     transition: color var(--time-function), fill var(--time-function);
 
     @include desktop {
         display: flex;
         gap: 10px;
+        padding-top: 32px;
+        padding-bottom: 32px;
 }
 
     &:hover,
@@ -53,11 +77,20 @@
     &:hover .contacts__icon,
     &:focus .contacts__icon {
             fill: var(--blue-cl);}
-        
-        
+
+     
         }
-.contacts__item:not(:last-child) {
-    padding-bottom: 10px;
+
+ 
+
+ .contacts__link:not(:first-child){
+    padding-top: 5px;
+    padding-bottom: 21px;
+ }
+
+ 
+ .contacts__item:not(:last-child) {
+    //padding-top: 21px;
 
     @include desktop {
         padding-bottom: 0;

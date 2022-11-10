@@ -9,6 +9,7 @@
     padding: 0;
     margin-left: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
 
     background-color: transparent;
     border: none;
@@ -92,6 +93,10 @@ padding-bottom: 32px;
     &:focus {
         color: var(--blue-cl);
     }
+}
+
+.mobile-menu__link--active {
+    color: var(--blue-cl);
 }
 
 .mobile-menu__tel {

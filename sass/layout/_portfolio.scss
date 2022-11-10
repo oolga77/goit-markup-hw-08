@@ -1,9 +1,12 @@
 .portfolio{
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     
     
 }
+
+
 
 .portfolio__title {
     font-weight: 700;
@@ -18,13 +21,19 @@
 }
 
 .portfolio__item{
-    margin-right: 30px;
-    margin-bottom: 30px;
-       
+    
+    width: 100%;
 
-        &:nth-child(3n){
-            margin-right: 0;
-}
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+        
+        
+    }
+
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+        
+    }
 }
 
 .porfolio-thumb{
@@ -34,6 +43,7 @@
 
 .portfolio__link {
     display: block;
+    height: 100%;
 
     transition: box-shadow var(--time-function);
 
@@ -57,5 +67,7 @@
 .portfolio__name {
     padding: 20px 24px;
     border: 1px solid var(--portfolio-border-cl);
+    border-top: 0;
+    
 }
 
