@@ -42,7 +42,8 @@
 }
 
 .portfolio__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
 
     transition: box-shadow var(--time-function);
@@ -62,12 +63,16 @@
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--second-cl);
+
+    
+        
 }
 
 .portfolio__name {
     padding: 20px 24px;
     border: 1px solid var(--portfolio-border-cl);
     border-top: 0;
+    
     
 }
 

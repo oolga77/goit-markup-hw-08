@@ -45,14 +45,14 @@
         <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16px" height="12px">
+              <svg class="contacts__icon contacts__icon--mail" width="16px" height="12px">
               <use href="./images/icons.svg#mail"></use>
             </svg>
             info@devstudio.com</a>
           </li>
           <li class="contacts__item">
             <a class="contacts__link link" href="tel:+380961111111">
-            <svg class="contacts__icon" width="10px" height="16px">
+            <svg class="contacts__icon contacts__icon--tel" width="10px" height="16px">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11</a></li>
@@ -160,12 +160,27 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="">
 
-              <div class="porfolio-thumb">  
-                <img class="portfolio-thumb__img"
+              <div class="porfolio-thumb">
+                <picture>
+                  <source
+                  srcset="./images/images-portfolio/seafood.jpg 1x, ./images/images-portfolio/seafood2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <source
+                  srcset="./images/images-portfolio/seafood-tab.jpg 1x, ./images/images-portfolio/seafood-tab2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  >
+                  <source
+                  srcset="./images/images-portfolio/seafood-mob.jpg 1x, ./images/images-portfolio/seafood-mob2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
+                  <img class="portfolio-thumb__img"
               src="./images/images-portfolio/seafood.jpg"
               alt="Логотип ресторану"
-              width="370"
-              height="294"/>
+              width="450"
+              />
+                </picture>  
+                
 
               <div class="portfolio-overlay"> 
                   <p class="portfolio-overlay__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -180,12 +195,26 @@
           </li>
           <li class="portfolio__item">
             <a class="portfolio__link link" href="">
-              <div class="porfolio-thumb">  
-                <img class="portfolio-thumb__img"
+              <div class="porfolio-thumb"> 
+                <picture>
+                  <source
+                  srcset="./images/images-portfolio/prime.jpg 1x, ./images/images-portfolio/prime2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <source
+                  srcset="./images/images-portfolio/prime-tab.jpg 1x, ./images/images-portfolio/prime-tab2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  >
+                  <source
+                  srcset="./images/images-portfolio/prime-mob.jpg 1x, ./images/images-portfolio/prime-mob2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
+                  <img class="portfolio-thumb__img"
                   src="./images/images-portfolio/prime.jpg"
                   alt="Чорні накладні навушники"
-                  width="370"
-                  height="294"/>
+                  width="450"/>
+                </picture> 
+                
 
               <div class="portfolio-overlay"> 
                   <p class="portfolio-overlay__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -200,12 +229,27 @@
           </li>
           <li class="portfolio__item">
             <a class="portfolio__link link" href="">
-              <div class="porfolio-thumb">  
-                    <img class="portfolio-thumb__img"
+              <div class="porfolio-thumb">
+                <picture>
+                  <source
+                  srcset="./images/images-portfolio/boxes.jpg 1x, ./images/images-portfolio/boxes2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <source
+                  srcset="./images/images-portfolio/boxes-tab.jpg 1x, ./images/images-portfolio/boxes-tab2x.jpg 2x" 
+                  media="(min-width: 768px)"                
+                  >
+                  <source
+                  srcset="./images/images-portfolio/boxes-mob.jpg 1x, ./images/images-portfolio/boxes-mob2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
+                  <img class="portfolio-thumb__img"
                   src="./images/images-portfolio/boxes.jpg"
                   alt="Дві коробки, одна рожева, друга біла"
-                  width="370"
-                  height="294"/>
+                  width="450"
+                  />
+                </picture>
+                    
 
               <div class="portfolio-overlay"> 
                   <p class="portfolio-overlay__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -221,19 +265,30 @@
           </li>
           <li class="portfolio__item">
             <a class="portfolio__link link" href="">
-              <div class="porfolio-thumb">  
+              <div class="porfolio-thumb">
+                <picture>
+                  <source
+                  srcset="./images/images-portfolio/inspiration.jpg 1x, ./images/images-portfolio/inspiration2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <source
+                  srcset="./images/images-portfolio/inspiration-tab.jpg 1x, ./images/images-portfolio/inspiration-tab2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  >
+                  <source
+                  srcset="./images/images-portfolio/inspiration-mob.jpg 1x, ./images/images-portfolio/inspiration-mob2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  >
                   <img class="portfolio-thumb__img"
                 src="./images/images-portfolio/inspiration.jpg"
                 alt="Чорній монітор епл на сірій підставці"
-                width="370"
-                height="294"/>
-
+                width="450"/>
+                </picture>  
+                
           <div class="portfolio-overlay"> 
               <p class="portfolio-overlay__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
           </div>
-
-
            
             <div class="portfolio__name">
             <h2 class="portfolio__title">Inspiration has no Borders</h2>
@@ -244,12 +299,27 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="">
 
-          <div class="porfolio-thumb">  
-                <img class="portfolio-thumb__img"
+          <div class="porfolio-thumb">
+            <picture>
+              <source
+              srcset="./images/images-portfolio/limited-edition.jpg 1x, ./images/images-portfolio/limited-edition2x.jpg 2x"
+              media="(min-width: 1200px)"
+              >
+              <source
+              srcset="./images/images-portfolio/limited-edition-tab.jpg 1x, ./images/images-portfolio/limited-edition-tab2x.jpg 2x"
+              media="(min-width: 768px)"
+              >
+              <source
+              srcset="./images/images-portfolio/limited-edition-mob.jpg 1x, ./images/images-portfolio/limited-edition-mob2x.jpg 2x"
+              media="(max-width: 767px)"
+              >
+              <img class="portfolio-thumb__img"
               src="./images/images-portfolio/limited-edition.jpg"
               alt="На розвороті журналу три фото и напис I'm  Limited Edition"
-              width="370"
-              height="294"/>
+              width="450"/>
+            </picture>
+               
+                
 
             <div class="portfolio-overlay"> 
               <p class="portfolio-overlay__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -267,11 +337,25 @@
             <a class="portfolio__link link" href="">
 
           <div class="porfolio-thumb">  
+            <picture>
+              <source
+              srcset="./images/images-portfolio/lab.jpg 1x, ./images/images-portfolio/lab2x.jpg 2x"
+              media="(min-width: 1200px)"
+              >
+              <source
+              srcset="./images/images-portfolio/lab-tab.jpg 1x, ./images/images-portfolio/lab-tab2x.jpg 2x"
+              media="(min-width: 768px)"
+              >
+              <source
+              srcset="./images/images-portfolio/lab-mob.jpg 1x, ./images/images-portfolio/lab-mob2x.jpg 2x"
+              media="(max-width: 767px)"
+              >
               <img class="portfolio-thumb__img"
               src="./images/images-portfolio/lab.jpg"
               alt="Ярлик для одягу з написом Lab el tag"
-              width="370"
-              height="294"/>  
+              width="450"/>  
+            </picture>
+              
 
             <div class="portfolio-overlay"> 
               <p class="portfolio-overlay__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -287,11 +371,25 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="">
             <div class="porfolio-thumb">  
-                 <img class="portfolio-thumb__img"
+              <picture>
+                <source
+                srcset="./images/images-portfolio/growing-bus.jpg 1x, ./images/images-portfolio/growing-bus2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="./images/images-portfolio/growing-bus-tab.jpg 1x, ./images/images-portfolio/growing-bus-tab2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/images-portfolio/growing-bus-mob.jpg 1x, ./images/images-portfolio/growing-bus-mob2x.jpg 2x"
+                media="(max-width: 767px)"
+                >
+                <img class="portfolio-thumb__img"
               src="./images/images-portfolio/growing-bus.jpg"
               alt="Чоловічі руки на клавіатурі ноутбука"
-              width="370"
-              height="294"/> 
+              width="450"/> 
+              </picture>
+                 
   
               <div class="portfolio-overlay"> 
                 <p class="portfolio-overlay__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
