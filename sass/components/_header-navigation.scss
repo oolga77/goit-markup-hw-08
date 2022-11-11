@@ -60,7 +60,7 @@
     transition: color var(--time-function);
  
     @include tablet {
-   bottom: -2px;
+   bottom: -1px;
 }
     @include desktop {
     bottom: -1px;
